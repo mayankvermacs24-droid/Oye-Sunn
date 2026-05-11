@@ -90,7 +90,7 @@ export default function WelcomeScreen({ navigation }) {
   return (
     <View style={[styles.container, { paddingTop: insets.top }]}>
       <StatusBar barStyle="light-content" />
-      
+
       {/* Decorative background circles */}
       <View style={styles.bgCircle1} />
       <View style={styles.bgCircle2} />
@@ -141,9 +141,9 @@ export default function WelcomeScreen({ navigation }) {
             transform: [{ translateY: slideAnim }],
           }}
         >
-          <Text style={styles.appName}>oyee sun!</Text>
+          <Text style={styles.appName}>Oye Sunn!</Text>
           <Text style={styles.tagline}>
-            Location-based reminders{'\n'}that never let you forget.
+            Location based reminders{'\n'}that never let you forget.
           </Text>
         </Animated.View>
 
@@ -159,12 +159,12 @@ export default function WelcomeScreen({ navigation }) {
           ]}
         >
           <Text style={styles.welcomeText}>Welcome aboard! 👋</Text>
-          
+
           <FormInput
             label="Enter your Nickname to Begin"
             value={nickname}
             onChangeText={setNickname}
-            placeholder="e.g. Sunny Pete"
+            placeholder="e.g. Your Name"
             maxLength={20}
           />
 
@@ -202,7 +202,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingHorizontal: Spacing.xxl,
   },
-  
+
   // Decorative bg circles
   bgCircle1: {
     position: 'absolute',
@@ -231,7 +231,7 @@ const styles = StyleSheet.create({
     top: 200,
     left: 50,
   },
-  
+
   // Sun
   sunContainer: {
     marginBottom: Spacing.xxxl,
